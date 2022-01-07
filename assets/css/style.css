@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --black: #000000;
+    --white: #ffffff;
+    --cssColor: #33cc33;
+    --htmlColor: #ff9933;
+    --jsColor: #e6e600;
+    --juniorColor: #3399ff;
+    --intermediateColor: #009933;
+    --advancedColor: #ff3300;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* . Header */
+
+header {
+    width: 100%;
+    background: var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+ul {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    color: var(--white);
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* . Gallery Content */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 50px;
+    max-width: 1440px;
+    margin: 120px auto 0 auto;
+    padding: 0 50px;
+}
+
+.gallery--item {
+    display: flex;
+    min-width: 360px;
+    max-width: 480px;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px #00000020;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding-bottom: 30px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.gallery--item h1 {
+    font-size: 2rem;
+}
+
+.gallery--item img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: all .7s;
+}
+
+.gallery--item:hover img{
+    transform: scale(1.1, 1.01);
+
+}
+
+/* . Card Categories and Levels */
+
+.card--info {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card--item {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+/* . Categories */
+
+.categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.css {
+    color: var(--cssColor);
+}
+
+.html {
+    color: var(--htmlColor);
+}
+
+.javascript {
+    color: var(--jsColor);
+}
+
+/* . Levels */
+
+.junior, .intermediate, .advanced {
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.junior {
+    color: var(--juniorColor);
+}
+
+.intermediate {
+    color: var(--intermediateColor);
+}
+
+.advanced {
+    color: var(--advancedColor);
+}
+
+/* . Footer */
+
+footer {
+    width: 100%;
+    background: var(--black);
+}
