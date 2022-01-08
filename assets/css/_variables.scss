@@ -1,0 +1,32 @@
+$firstColor: #000000;
+$secondColor: #f2e8e8;
+$thirdColor: #ffffff;
+$fourthColor: #6665dd;
+$fifthColor: #473bf0;
+
+$languageColor: (
+  "html": #ffa500,
+  "css": #008000,
+  "javascript": #ffff00,
+);
+
+$levelColor: (
+  "junior": #0000ff,
+  "intermediate": #006400,
+  "advanced": #ff0000,
+);
+
+@each $name, $color in $languageColor {
+  .#{$name} {
+    background: $color;
+    border: 1px solid $thirdColor;
+    color: $firstColor;
+  }
+}
+@each $name, $color in $levelColor {
+  .#{$name} {
+    background: $color;
+    border: 1px solid $thirdColor;
+    color: $thirdColor;
+  }
+}

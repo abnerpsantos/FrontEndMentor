@@ -1,27 +1,32 @@
-const mainContent = document.querySelector("main");
+const mainContent = document.querySelector(".container");
 
 mainContent.innerHTML = data.map((item) => (
     `
-    <div class="gallery--item">
-        <a href="${item.index}">
-            <img src="${item.image}" alt="${item.title}">
-            <h1>${item.title}</h1>
-        </a>
+        <div class="card">
+            <div class="card--image">
+                <img src="${item.image}" alt="${item.title}">
+                <span class="card--level ${item.level}">
+                    ${item.levelText}
+                </span>
+            </div>
         <div class="card--info">
-            <section class="categories">
+            <div class="technologies">
                 ${item.categories.map((categories) => (
                     showCategories(categories)
-                )).join(" ")}    
-            </section>
-            <section class="levels">
-                <span class="card--item ${item.level}">${item.levelText}</span>
-            </section>
+                ))}
+            </div>
+            <div class="card--description">
+                <p>${item.description}</p>
+            </div>
+            <div class="card--date">
+                <span>DATA:</span>
+                <span>20/11/2000</span>
+            </div>
         </div>
     </div>
     `
-    )).join('');
+)).join('');
 
-    function showCategories (categories) {
-        return (`<span class="card--item ${categories}">${categories}</span>`)
-    }
-
+function showCategories(categories) {
+    return (`<span class="${categories}">${categories}</span>`)
+}

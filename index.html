@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/721ec727b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="assets/javascript/data.js" defer></script>
     <script src="assets/javascript/main.js" defer></script>
     <title>Document</title>
@@ -16,39 +19,59 @@
     <header>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>item2</li>
-                <li>item3</li>
-                <li>item4</li>
-                <li>CONTATO</li>
+                <li>
+                    <a href="#home">
+                        <em class="fas fa-home"></em>
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projetos">
+                        <em class="fas fa-project-diagram"></em>
+                        <span>PROJETOS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato">
+                        <em class="fas fa-phone-alt"></em>
+                        <span>CONTATO</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="gallery--item">
-            <a href="Projects/P01-OrderSummary/index.html">
-                <img src="./assets/images/OrderSummary.jpg" alt="">
-                <h1>Order Summary</h1>
-            </a>
-            <div class="card--info">
-                <section class="categories">
-                    <span class="card--item html">HTML</span>
-                    <span class="card--item css">CSS</span>
-                    <span class="card--item javascript">JAVASCRIPT</span>
-                </section>
-                <section class="levels">
-                    <span class="card--item junior">Junior</span>
-                    <span class="card--item intermediate">Intermediário</span>
-                    <span class="card--item advanced">Avançado</span>
-                </section>
+        <div class="container">
+            <div class="card">
+                <div class="card--image">
+                    <img src="assets/images/OrderSummary.jpg" alt="Order Summary">
+                    <span class="card--level intermediate">
+                        Intermediate
+                    </span>
+                </div>
+                <div class="card--info">
+                    <div class="technologies">
+                        <span class="html">HTML</span>
+                        <span class="css">CSS</span>
+                        <span class="javascript">javascript</span> <span class="html5">HTML</span>
+                        <span class="css3">CSS</span>
+                        <span class="javascript">javascript</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </main>
     <footer>
-        <address>
-
-        </address>
-        Created By: Abner Santos
+        <div class="contact">
+            <h1>Created By: Abner Santos</h1>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="https://www.instagram.com/abnerpsantos"><em class="fab fa-instagram"></em></a></li>
+                <li><a href="https://www.linkedin.com/in/abnerpsantos"><em class="fab fa-linkedin"></em></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
